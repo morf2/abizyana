@@ -24,6 +24,15 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   creator: siteConfig.name,
   publisher: siteConfig.name,
+  category: "Веб-разработка и дизайн",
+  keywords: [
+    "создание сайтов Барнаул",
+    "разработка сайтов Барнаул",
+    "дизайн сайтов Барнаул",
+    "веб-дизайн Барнаул",
+    "Telegram-боты Барнаул",
+    "автоматизация бизнеса Барнаул",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -81,6 +90,51 @@ const jsonLd = {
       alternateName: siteConfig.alternateName,
       url: siteConfig.url,
       logo: `${siteConfig.url}/logo.png`,
+      telephone: "+79609613435",
+      areaServed: {
+        "@type": "City",
+        name: "Барнаул",
+      },
+      knowsAbout: [
+        "Разработка сайтов",
+        "Веб-дизайн",
+        "Telegram-боты",
+        "Автоматизация бизнеса",
+      ],
+      sameAs: [
+        "https://t.me/baga1806",
+        "https://max.ru/u/f9LHodD0cOIbpCHujiRR9Zjd9OVs7aFJE9dFowp1GwktXyCZTEVNcgmXWWQ",
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteConfig.url}/#faq`,
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Как начать работу?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Позвоните по номеру 8 960 961-34-35 или напишите в Telegram или MAX. Обсудим задачу и договоримся о следующем шаге.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Какие проекты вы делаете?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Создаём сайты, ботов, оформление, digital-дизайн и автоматизацию для бизнеса и других проектов.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Можно заказать сайт в Барнауле?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Да. Разрабатываем в Барнауле лендинги и сайты для бизнеса: продумываем структуру, создаём дизайн, собираем и запускаем проект.",
+          },
+        },
+      ],
     },
   ],
 };
