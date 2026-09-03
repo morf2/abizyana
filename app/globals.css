@@ -617,7 +617,7 @@ html.photo-motion-ready .team-photo.is-photo-visible::after { animation: photo-s
   .hero-title span { align-self: flex-start; }
   .hero-title strong { align-self: flex-end; }
   .hero-copy { max-width: 18ch; margin-top: 46px; font-size: clamp(21px, 7.2vw, 30px); }
-  .hero-monkey-left { top: 56%; left: -12px; width: 88px; }
+  .hero-monkey-left { top: auto; bottom: 16px; left: -10px; width: 76px; }
   .hero-monkey-right { top: 72%; right: -10px; width: 78px; }
   .cta-link { min-height: 52px; padding: 14px 26px; font-size: 15px; }
 
