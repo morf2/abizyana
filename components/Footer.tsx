@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           <span>Связаться с нами</span>
           <a href="tel:+79609613435">8 960 961-34-35</a>
         </div>
-        <a className="footer-logo" href="#top" aria-label="Абизяна — наверх">
+        <Link className="footer-logo" href="/" aria-label="Абизяна — на главную" prefetch={false}>
           <Image
             src="/logo.png"
             alt="Абизяна"
@@ -16,7 +17,7 @@ export default function Footer() {
             height={89}
             sizes="180px"
           />
-        </a>
+        </Link>
         <div className="footer-socials" aria-label="Мессенджеры">
           <a href="https://t.me/baga1806" target="_blank" rel="noreferrer">
             Telegram

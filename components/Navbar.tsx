@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 const navigation = [
-  { href: "#about", label: "О нас" },
-  { href: "#projects", label: "Проекты" },
-  { href: "#process", label: "Принцип" },
-  { href: "#pricing", label: "Тарифы" },
-  { href: "#faq", label: "Вопросы" },
+  { href: "/#about", label: "О нас" },
+  { href: "/#services", label: "Услуги" },
+  { href: "/#projects", label: "Проекты" },
+  { href: "/#pricing", label: "Тарифы" },
+  { href: "/#faq", label: "Вопросы" },
 ];
 
 export default function Navbar() {
@@ -22,13 +23,13 @@ export default function Navbar() {
       <nav className="site-nav page-shell" aria-label="Основная навигация">
         <div className="desktop-nav desktop-nav-left">
           {navigation.slice(0, 2).map((item) => (
-            <a key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href} prefetch={false}>
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <a className="brand-link" href="#top" aria-label="Абизяна — наверх">
+        <Link className="brand-link" href="/" aria-label="Абизяна — на главную" prefetch={false}>
           <Image
             src="/logo.png"
             alt="Абизяна"
@@ -37,13 +38,13 @@ export default function Navbar() {
             sizes="(max-width: 767px) 170px, 280px"
             priority
           />
-        </a>
+        </Link>
 
         <div className="desktop-nav desktop-nav-right">
           {navigation.slice(2).map((item) => (
-            <a key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href} prefetch={false}>
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -55,9 +56,9 @@ export default function Navbar() {
           </summary>
           <div className="mobile-menu-panel">
             {navigation.map((item) => (
-              <a key={item.href} href={item.href} onClick={closeMenu}>
+              <Link key={item.href} href={item.href} onClick={closeMenu} prefetch={false}>
                 {item.label}
-              </a>
+              </Link>
             ))}
             <a className="mobile-contact" href="tel:+79609613435" onClick={closeMenu}>
               Позвонить
