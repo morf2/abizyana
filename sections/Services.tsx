@@ -10,8 +10,8 @@ export default function Services() {
           Сайты, дизайн, боты и автоматизация
         </h2>
         <p className="section-lead services-lead">
-          Создаём цифровые проекты для бизнеса в Барнауле — от идеи и
-          структуры до разработки и запуска.
+          Создаём цифровые проекты для бизнеса по всей России — от идеи и
+          структуры до разработки, запуска и поддержки.
         </p>
         <ServiceCards />
         <Link className="service-all-link" href="/uslugi/" prefetch={false}>

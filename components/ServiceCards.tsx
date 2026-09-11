@@ -22,7 +22,7 @@ export default function ServiceCards({ excludeSlug, limit }: ServiceCardsProps) 
         >
           <span>{service.stamp}</span>
           <h3>{service.shortName}</h3>
-          <p>{service.metaDescription}</p>
+          <p>{service.lead}</p>
           <strong>Подробнее →</strong>
         </Link>
       ))}

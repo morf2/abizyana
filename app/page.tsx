@@ -5,6 +5,7 @@ import About from "@/sections/About";
 import Services from "@/sections/Services";
 import Team from "@/sections/Team";
 import Projects from "@/sections/Projects";
+import Trust from "@/sections/Trust";
 import Process from "@/sections/Process";
 import WhyUs from "@/sections/WhyUs";
 import Pricing from "@/sections/Pricing";
@@ -23,6 +24,7 @@ export default function Home() {
       <Team />
       <LogoMarquee />
       <Projects />
+      <Trust />
       <Process />
       <WhyUs />
       <Pricing />

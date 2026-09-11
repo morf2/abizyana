@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   publisher: siteConfig.name,
   category: "Веб-разработка и дизайн",
   keywords: [
+    "создание сайтов",
+    "разработка сайтов для бизнеса",
+    "веб-дизайн",
+    "разработка Telegram-ботов",
+    "автоматизация бизнеса",
     "создание сайтов Барнаул",
     "разработка сайтов Барнаул",
     "дизайн сайтов Барнаул",
@@ -91,10 +96,10 @@ const jsonLd = {
       url: siteConfig.url,
       logo: `${siteConfig.url}/logo.png`,
       telephone: "+79609613435",
-      areaServed: {
-        "@type": "City",
-        name: "Барнаул",
-      },
+      areaServed: [
+        { "@type": "Country", name: "Россия" },
+        { "@type": "City", name: "Барнаул" },
+      ],
       knowsAbout: [
         "Разработка сайтов",
         "Веб-дизайн",
@@ -102,7 +107,7 @@ const jsonLd = {
         "Автоматизация бизнеса",
       ],
       sameAs: [
-        "https://t.me/baga1806",
+        "https://t.me/abizi22",
         "https://max.ru/u/f9LHodD0cOIbpCHujiRR9Zjd9OVs7aFJE9dFowp1GwktXyCZTEVNcgmXWWQ",
       ],
     },
@@ -128,10 +133,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Можно заказать сайт в Барнауле?",
+          name: "Вы работаете только в Барнауле?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Да. Разрабатываем в Барнауле лендинги и сайты для бизнеса: продумываем структуру, создаём дизайн, собираем и запускаем проект.",
+            text: "Нет. Мы базируемся в Барнауле, а проекты ведём онлайн с клиентами из разных городов России: обсуждаем задачу, показываем этапы и запускаем готовый продукт дистанционно.",
           },
         },
       ],
@@ -153,6 +158,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={montserrat.variable}>
+      <head>
+        <link rel="icon" href="/apple-icon.png" sizes="180x180" type="image/png" />
+      </head>
       <body>
         <script
           type="application/ld+json"

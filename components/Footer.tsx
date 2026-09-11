@@ -19,8 +19,11 @@ export default function Footer() {
           />
         </Link>
         <div className="footer-socials" aria-label="Мессенджеры">
+          <a href="https://t.me/abizi22" target="_blank" rel="noreferrer">
+            Telegram-канал
+          </a>
           <a href="https://t.me/baga1806" target="_blank" rel="noreferrer">
-            Telegram
+            Написать
           </a>
           <a
             href="https://max.ru/u/f9LHodD0cOIbpCHujiRR9Zjd9OVs7aFJE9dFowp1GwktXyCZTEVNcgmXWWQ"

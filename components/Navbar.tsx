@@ -8,6 +8,7 @@ const navigation = [
   { href: "/#about", label: "О нас" },
   { href: "/#services", label: "Услуги" },
   { href: "/#projects", label: "Проекты" },
+  { href: "/#trust", label: "Доверие" },
   { href: "/#pricing", label: "Тарифы" },
   { href: "/#faq", label: "Вопросы" },
 ];
@@ -22,7 +23,7 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="site-nav page-shell" aria-label="Основная навигация">
         <div className="desktop-nav desktop-nav-left">
-          {navigation.slice(0, 2).map((item) => (
+          {navigation.slice(0, 3).map((item) => (
             <Link key={item.href} href={item.href} prefetch={false}>
               {item.label}
             </Link>
@@ -41,7 +42,7 @@ export default function Navbar() {
         </Link>
 
         <div className="desktop-nav desktop-nav-right">
-          {navigation.slice(2).map((item) => (
+          {navigation.slice(3).map((item) => (
             <Link key={item.href} href={item.href} prefetch={false}>
               {item.label}
             </Link>
@@ -62,6 +63,15 @@ export default function Navbar() {
             ))}
             <a className="mobile-contact" href="tel:+79609613435" onClick={closeMenu}>
               Позвонить
+            </a>
+            <a
+              className="mobile-contact"
+              href="https://t.me/abizi22"
+              target="_blank"
+              rel="noreferrer"
+              onClick={closeMenu}
+            >
+              Наш Telegram-канал
             </a>
             <a
               className="mobile-contact"
