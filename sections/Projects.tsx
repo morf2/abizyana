@@ -17,6 +17,13 @@ const projects = [
     logo: "/figma/uno-caffe.png",
     logoClass: "project-logo-uno",
   },
+  {
+    name: "STARSHIP FC",
+    description:
+      "Сайт футбольного клуба — сильная айдентика и удобная подача информации для игроков и болельщиков.",
+    logo: "/starship-fc.webp",
+    logoClass: "project-logo-starship",
+  },
 ];
 
 export default function Projects() {
