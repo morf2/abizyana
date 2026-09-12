@@ -74,6 +74,13 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  icons: {
+    icon: {
+      url: "/favicon.png",
+      type: "image/png",
+      sizes: "120x120",
+    },
+  },
 };
 
 const jsonLd = {
@@ -158,9 +165,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={montserrat.variable}>
-      <head>
-        <link rel="icon" href="/apple-icon.png" sizes="180x180" type="image/png" />
-      </head>
       <body>
         <script
           type="application/ld+json"
