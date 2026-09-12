@@ -24,6 +24,13 @@ const projects = [
     logo: "/starship-fc.webp",
     logoClass: "project-logo-starship",
   },
+  {
+    name: "Рейтинговая система",
+    description:
+      "Создание рейтинговой системы с админ-панелью для образовательной организации.",
+    logo: "/rating-system.png",
+    logoClass: "project-logo-rating",
+  },
 ];
 
 export default function Projects() {

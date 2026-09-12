@@ -433,6 +433,7 @@ html.photo-motion-ready .team-photo.is-photo-visible::after { animation: photo-s
 .project-logo-vostroy { max-width: 430px; }
 .project-logo-uno { width: min(48vw, 230px); height: 230px; overflow: hidden; border-radius: 50%; background: #f4efe9; }
 .project-logo-starship { width: min(42vw, 176px); height: 264px; }
+.project-logo-rating { width: min(68vw, 600px); height: auto; aspect-ratio: 5 / 2; }
 .project-slide p { max-width: 42ch; margin: 24px auto 0; color: var(--muted); font-size: clamp(17px, 2vw, 23px); font-weight: 500; line-height: 1.3; }
 .project-monkey { position: absolute; z-index: 1; right: 4%; bottom: 6%; width: clamp(72px, 8vw, 105px); height: auto; transform: rotate(9deg); }
 .project-arrow {
@@ -809,6 +810,7 @@ html.photo-motion-ready .team-photo.is-photo-visible::after { animation: photo-s
   .project-logo-frame { width: min(68vw, 290px); height: 160px; }
   .project-logo-uno { width: 172px; height: 172px; }
   .project-logo-starship { width: 150px; height: 224px; }
+  .project-logo-rating { width: min(62vw, 280px); height: auto; }
   .project-slide p { margin-top: 22px; font-size: 17px; }
   .project-monkey { right: -5px; bottom: 6%; width: 70px; opacity: .84; }
   .project-arrow { width: 42px; height: 42px; font-size: 21px; }
